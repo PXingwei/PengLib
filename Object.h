@@ -9,17 +9,17 @@ namespace PengLib
 	{
 	public:
 		/**Overload the new operator */
-        void* operator new(unsigned int size) throw();
+        	void* operator new(unsigned int size) throw();
 		/**Overload the new[] operator */
-        void* operator new[](unsigned int size) throw();
+       	 	void* operator new[](unsigned int size) throw();
 		/**Overload the delete operator */
 		void operator delete (void* pn);
 		/**Overload the delete[] operator */	
 		void operator delete[] (void* pn);
 		/**Overload the == operator */
-        bool operator == (const Object& e);
-        /**Overload the != operator */
-        bool operator != (const Object& e);
+       		 bool operator == (const Object& e);
+        	/**Overload the != operator */
+        	bool operator != (const Object& e);
 
 		virtual ~Object();
 	};
